@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo App</h1>
+      <div class="input-container">
+        <input type="text" id="title" placeholder="Add a Title" />
+        <input type="text" id="description" placeholder="Add a Description" />
+      </div>
+      <div class="btn-container">
+        <button onclick="onPost()" id="add">Add</button>
+        <br />
+      </div>
+      <table id="task-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="task-list">
+          <!-- Task items will go here -->
+        </tbody>
+      </table>
+    </div>
+    </div>
+    <script src="fetch.js"></script>
+  </body>
+</html>
